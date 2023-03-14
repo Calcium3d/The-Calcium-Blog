@@ -1,0 +1,91 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
+import Layout from '../layouts/BlogPost.astro';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+).reverse();
+
+const heroImage = "/fujiwara.png"
+---
+
+<!DOCTYPE html>
+<html lang="en" class='bg-gradient-to-r from-gray-700 to-gray-800 text-white bg-blur-lg touch-pan-y'>
+	<div class='p-5 md:p-16 backdrop-blur-xl' >
+		<head>
+			<meta charset="UTF-8" />
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+			<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+			
+		</head>
+		<body>
+			<main>
+				<Header />
+				<section class='grid lg:grid-cols-2 '>
+					<section class='justify-self-start overscroll-none'>
+						<img class='drop-shadow-2xl mb-10 rounded-xl align-middle border-none' width={720} src={heroImage}>
+							<div class='prose prose-xl text-white prose-a:text-blue-400 prose-a:no-underline hover:prose-a:underline transition delay-50 duration-75 ease-in-out'>
+							<h1 class='text-white'>
+								Hello There.
+							</h1>
+							<p>
+								I dont expect you to respond with "General Kenobi", but if you did, you're one of the few people to do so. 
+							</p>
+							<p>
+								I'm <span class='text-blue-400'>Calcium</span>, a 17 year old with an interest in a lot of things. So what do I like exactly? 
+							</p>
+							<p>
+								Well the answer could vary from me nerding about cars and my addiction to making 3d renders of them, to talking about stuff like assetto, or games in general, or talking about the latest and greatest in web development, or you know, <a href="https://anilist.co/user/CalciumThePenguin/">Anime</a>.
+							</p>
+							<p>
+								If you wanna reach out to me, <a href='mailto:thebluechalk@gmail.com'>email me</a>.
+							</p>
+							<h3 class='text-5xl text-white font-Poppins'>
+								Socials
+
+							</h3>
+							<div class='text-3xl grid'>
+								<a class='p-2' href="https://www.instagram.com/calcium_3d/">
+									Instagram 
+								</a>
+								<a class='p-2' href="https://github.com/Calcium3d">
+									Github 
+								</a>
+								<a class='p-2' href="https://www.artstation.com/calcium_3d">
+									Artstation 
+								</a>
+							</div>
+							</div>
+						
+					</section>
+					<section  class='overflow-auto'>
+						<ul>
+							{
+								posts.map((post) => (
+										<section class='bg-gray-800 text-right p-5 my-5 rounded-xl drop-shadow-xl font-Poppins hover:bg-gray-900 hover:drop-shadow-2xl transition ease-in-out delay-50'>
+											<div class='text-6xl text-blue-400'>
+												<a href={`/blog/${post.slug}/`}>
+													{post.data.title}
+												</a>
+											</div>
+											<div class='text-2xl pt-5 text-gray-200 '>
+												{post.data.description}
+											</div>
+											<div class='text-gray-400 text-xl pt-3 font-Coolvetica'>
+												<FormattedDate date={post.data.pubDate} />
+											</div>
+										</section>
+								))
+							}
+						</ul>
+					</section>
+				</section>
+			</main>
+		</body>
+	</div>
+</html>
