@@ -5,13 +5,11 @@ module.exports = {
 		container: {
 			center: true,
 		  },
-		extend: {
-			fontFamily: {
-				Coolvetica: ['Coolvetica', 'sans-serif'],
-				Lato: ['Lato', 'sans-serif'],
-				Poppins: ['Poppins', 'sans-serif'],
-			},
-		},
+		fontFamily: {
+			Poppins: ['poppins', 'sans-serif'],
+			DM: ['dm-sans', 'sans-serif'],
+		}
+		
 	},
 	plugins: [
 		require('@tailwindcss/typography'),

@@ -1,11 +1,11 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../components/FormattedDate.astro';
-import Layout from '../layouts/BlogPost.astro';
+import '@fontsource/poppins';
+import '@fontsource/dm-sans';
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
@@ -21,12 +21,11 @@ const heroImage = "/fujiwara.png"
 			<meta charset="UTF-8" />
 			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 			<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-			
 		</head>
 		<body>
 			<main>
 				<Header />
-				<section class='grid lg:grid-cols-2 '>
+				<section class='grid lg:grid-cols-2 gap-16'>
 					<section class='justify-self-start overscroll-none'>
 						<img class='drop-shadow-2xl mb-10 rounded-xl align-middle border-none' width={720} src={heroImage}>
 							<div class='prose prose-xl text-white prose-a:text-blue-400 prose-a:no-underline hover:prose-a:underline transition delay-50 duration-75 ease-in-out'>
@@ -67,19 +66,19 @@ const heroImage = "/fujiwara.png"
 						<ul>
 							{
 								posts.map((post) => (
-										<section class='bg-gray-800 text-right p-5 my-5 rounded-xl drop-shadow-xl font-Poppins hover:bg-gray-900 hover:drop-shadow-2xl transition ease-in-out delay-50'>
-											<div class='text-6xl text-blue-400'>
-												<a href={`/blog/${post.slug}/`}>
+									<a href={`/blog/${post.slug}/`}>
+										<section class='bg-gray-800 text-right p-5 my-5 rounded-xl drop-shadow-xl hover:bg-gray-900 hover:drop-shadow-2xl transition ease-in-out delay-50'>
+											<h1 class='text-6xl text-blue-400 font-semibold font-Poppin'>
 													{post.data.title}
-												</a>
-											</div>
-											<div class='text-2xl pt-5 text-gray-200 '>
+											</h1>
+											<div class='text-2xl pt-5 text-gray-200 font-medium'>
 												{post.data.description}
 											</div>
-											<div class='text-gray-400 text-xl pt-3 font-Coolvetica'>
+											<div class='text-gray-400 text-xl pt-3 font-Poppins'>
 												<FormattedDate date={post.data.pubDate} />
 											</div>
 										</section>
+									</a>
 								))
 							}
 						</ul>
@@ -88,4 +87,5 @@ const heroImage = "/fujiwara.png"
 			</main>
 		</body>
 	</div>
+	
 </html>
