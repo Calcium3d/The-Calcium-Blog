@@ -5,14 +5,14 @@ pubDate: "Mar 15 2023"
 heroImage: "/assetto.jpg"
 ---
 
-Assetto Corsa may just be the best racing simulator on the market. Despite its nearly decade old lifespan, the active community has kept it alive with physics updates, reworked graphics and handling, improvements in every sector, and even the ability to drive at night. It is an experience like no other. A truly humbling simulator for anyone who thinks they were good at driving. 
+Assetto Corsa may just be the best racing simulator on the market. Despite its nearly decade old lifespan, the active community has kept it alive with reworked graphics and improvements in every sector, and even the ability to drive at night. It is an experience like no other. A truly humbling simulator for anyone who thinks they were good at driving.
 
-Music is something which stimulates everyone. People like different music, and it has been seen that different music affects different music differently, sometimes capable of enabling different sectors of the brain to perform differently, completely putting you in a different state of mind. 
+Music is something which stimulates everyone. People like different music, and it has been seen that different music affects different people differently, sometimes capable of enabling different sectors of the brain to perform differently, completely putting you in a different state of mind.
 
-A popular exam of this could be explained with studies. It helps to keep the brain calm and focused with its downtempo, more chill beats. It is also useful in drowning out the white noise in the background, because atleast for me, that kind of noise is distracting. A nice pair of noise cancelling headphones and lofi is all I need to study. 
+A popular example of this could be explained with studies. It helps to keep the brain calm and focused with its downtempo, more chill beats. It is also useful in drowning out the white noise in the background, because atleast for me, that kind of noise is distracting. A nice pair of noise cancelling headphones and lofi is all I need to study.
 
-Okay so I went on a slight explanation about music and their affect on emotions. What does this have to do with Assetto exactly?
+So I went on a slight explanation about music and their affect on emotions. What does this have to do with Assetto exactly?
 
-Well, on a slight tangent, I am writing this listening to [Sweater Weather](https://open.spotify.com/track/2QjOHCTQ1Jl3zawyYOpxh6?si=c96457fabce948f1) remixes, it is a really nice mood to listen to that music at 1am while writing this. This is what you call a prime vibe. 
+Well, on a slight tangent, I am writing this listening to [Sweater Weather](https://open.spotify.com/track/2QjOHCTQ1Jl3zawyYOpxh6?si=c96457fabce948f1) remixes, it is a really nice mood to listen to that music at 1am while writing this. This is what you call a prime vibe.
 
-Coming back to Assetto, music has the effect of changing my driving style ingame. While on the SRP highway, my [Sad Cruise](https://open.spotify.com/playlist/6eQQ0sUDWhhRFM020wXnMP?si=63fc54e2b55e4b7e) playlist makes me cruise with occasional pulls inbetween. However, you drop me into Shutoko with music like [Drift Phonk](https://open.spotify.com/playlist/5OotMJoYsOqVhya6pjELnJ?si=62f2323a05874d60), you will notice a rather drastic change in my driving style, as I go for more risky overtakes, and drive way faster. Along with the increase in aggression comes an increase in my skill for whatever reason. Overtakes I wouldnt normally do are now suddenly a piece of cake for me. 
+While on the SRP highway, my [playlist](https://open.spotify.com/playlist/6G8XNgaEm6TgbO5Gv1WQvq?si=0b5407ab2bac4150) playlist makes me cruise with occasional pulls inbetween. However, you drop me into Shutoko with music like [Drift Phonk](https://open.spotify.com/playlist/5OotMJoYsOqVhya6pjELnJ?si=62f2323a05874d60), you will notice a rather drastic change in my driving style, as I go for more risky overtakes, and drive way faster. Along with the increase in aggression comes an increase in my skill; Overtakes I wouldnt normally do are now suddenly a piece of cake for me.
