@@ -5,13 +5,13 @@ pubDate: "Mar 15 2023"
 heroImage: "/assetto.jpg"
 ---
 
-Assetto Corsa may just be the best racing simulator on the market. Despite its nearly decade old lifespan, the active community has kept it alive with reworked graphics and improvements in every sector, and even the ability to drive at night. It is an experience like no other. A truly humbling simulator for anyone who thinks they were good at driving.
+Assetto Corsa may just be the best racing simulator in the market. Despite the nearly decade old lifespan, the active community has kept it alive with reworked graphics and improvements in every sector, and even the ability to drive at night. It is an experience like no other. A truly humbling simulator for anyone who thinks they were good at driving.
 
-Music is something which stimulates everyone. People like different music, and it has been seen that different music affects different people differently, sometimes capable of enabling different sectors of the brain to perform differently, completely putting you in a different state of mind.
+Music is something which stimulates everyone. It has been seen that music stimulates everyone differently. Sometimes capable of enabling different sectors of the brain to perform differently, completely putting you in a different state of mind.
 
 A popular example of this could be explained with studies. It helps to keep the brain calm and focused with its downtempo, more chill beats. It is also useful in drowning out the white noise in the background, because atleast for me, that kind of noise is distracting. A nice pair of noise cancelling headphones and lofi is all I need to study.
 
-So I went on a slight explanation about music and their affect on emotions. What does this have to do with Assetto exactly?
+So I went on a slight explanation about music and their affect on emotions. What does this have to do with Assetto Corsa exactly?
 
 Well, on a slight tangent, I am writing this listening to [Sweater Weather](https://open.spotify.com/track/2QjOHCTQ1Jl3zawyYOpxh6?si=c96457fabce948f1) remixes, it is a really nice mood to listen to that music at 1am while writing this. This is what you call a prime vibe.
 
