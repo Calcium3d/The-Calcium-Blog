@@ -14,7 +14,7 @@ const heroImage = "/fujiwara.png"
 ---
 
 <!DOCTYPE html>
-<html lang="en" class='bg-gradient-to-r from-gray-700 to-gray-800 text-white bg-blur-lg touch-pan-y'>
+<html lang="en" class='bg-gradient-to-r from-gray-700 to-gray-800 text-white bg-blur-md touch-pan-y'>
 	<div class='p-5 md:p-16 backdrop-blur-xl' >
 		<head>
 			<meta charset="UTF-8" />
@@ -24,9 +24,9 @@ const heroImage = "/fujiwara.png"
 		<body>
 			<main>
 				<Header />
-				<section class='grid lg:grid-cols-2 gap-16'>
+				<section class='md:grid md:grid-cols-2 md:gap-16'>
 					<section class='justify-self-start overscroll-none'>
-						<img class='drop-shadow-2xl mb-10 rounded-xl align-middle border-none' width={720} src={heroImage}>
+						<img class='drop-shadow-2xl mb-3 md:mb-10 rounded-xl align-middle border-none' width={720} src={heroImage}>
 							<div class='prose prose-xl text-white prose-a:text-blue-400 prose-a:no-underline hover:prose-a:underline transition delay-50 duration-75 ease-in-out'>
 							<h1 class='text-white'>
 								Hello There.
@@ -43,18 +43,18 @@ const heroImage = "/fujiwara.png"
 							<p>
 								If you wanna reach out to me, <a href='mailto:thebluechalk@gmail.com'>email me</a>.
 							</p>
-							<h3 class='text-5xl text-white font-Poppins'>
+							<h3 class='text-4xl md:text-5xl text-white font-Poppins'>
 								Socials
 
 							</h3>
-							<div class='text-3xl grid'>
-								<a class='p-2' href="https://www.instagram.com/calcium_3d/">
+							<div class='md:text-3xl grid'>
+								<a class='md:p-2' href="https://www.instagram.com/calcium_3d/">
 									Instagram 
 								</a>
-								<a class='p-2' href="https://github.com/Calcium3d">
+								<a class='md:p-2' href="https://github.com/Calcium3d">
 									Github 
 								</a>
-								<a class='p-2' href="https://www.artstation.com/calcium_3d">
+								<a class='md:p-2' href="https://www.artstation.com/calcium_3d">
 									Artstation 
 								</a>
 							</div>
@@ -67,13 +67,13 @@ const heroImage = "/fujiwara.png"
 								posts.map((post) => (
 									<a href={`/blog/${post.slug}/`}>
 										<section class='bg-gray-800 text-right p-5 my-5 rounded-xl drop-shadow-xl hover:bg-gray-900 hover:drop-shadow-2xl transition ease-in-out delay-50'>
-											<h1 class='text-6xl text-blue-400 font-semibold font-Poppins'>
+											<h1 class='text-3xl md:text-6xl text-blue-400 font-semibold font-Poppins'>
 													{post.data.title}
 											</h1>
-											<div class='text-2xl pt-5 text-gray-200 font-Archivo font-medium'>
+											<div class='text-xl md:text-2xl pt-5 text-gray-200 font-Archivo font-medium'>
 												{post.data.description}
 											</div>
-											<div class='text-gray-400 text-xl pt-3 font-Poppins'>
+											<div class='text-gray-400 md:text-xl pt-3 font-Poppins'>
 												<FormattedDate date={post.data.pubDate} />
 											</div>
 										</section>

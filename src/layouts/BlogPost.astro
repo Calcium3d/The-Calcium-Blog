@@ -12,8 +12,8 @@ const { title, description, pubDate, heroImage } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en" class='bg-gradient-to-r from-gray-700 to-gray-800 text-white bg-blur-lg'>
-	<div  class='container p-5 lg:p-16 justify-content lg:w-11/12 backdrop-blur-xl'>
+<html lang="en" class='bg-gradient-to-r from-gray-700 to-gray-800 text-white bg-blur-md'>
+	<div  class='container p-5 md:p-16 justify-content md:w-11/12 backdrop-blur-xl'>
 
 		<head>
 			<BaseHead title={title} description={description} />
@@ -24,9 +24,9 @@ const { title, description, pubDate, heroImage } = Astro.props;
 			<Header />
 			<main>
 				<article>
-					<h1 class='text-6xl text-blue-400 font-Poppins font-semibold'>{title}</h1>
-					<p class='text-3xl py-5 font-Poppins'>{description}</p>
-					<div class='text-2xl text-gray-400 pb-5 font-Poppins'>
+					<h1 class='text-3xl md:text-6xl text-blue-400 font-Poppins font-semibold'>{title}</h1>
+					<p class='text-xl md:text-3xl py-5 font-Poppins'>{description}</p>
+					<div class='md:text-2xl text-gray-400 pb-5 font-Poppins'>
 						<FormattedDate date={pubDate} />
 					</div>
 					<div class='flex flex-col place-content-center'>
