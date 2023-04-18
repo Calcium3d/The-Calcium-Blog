@@ -5,11 +5,6 @@ module.exports = {
 		container: {
 			center: true,
 		  },
-		fontFamily: {
-			Poppins: ['poppins', 'sans-serif'],
-			Archivo: ['archivo', 'sans-serif'],
-		}
-		
 	},
 	plugins: [
 		require('@tailwindcss/typography'),

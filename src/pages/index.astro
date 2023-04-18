@@ -4,7 +4,9 @@ import Header from '../components/Header.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../components/FormattedDate.astro';
-import '@fontsource/poppins';
+import "@fontsource/outfit";
+import "@fontsource/jost";
+
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
@@ -15,7 +17,7 @@ const heroImage = "/fujiwara.png"
 
 <!DOCTYPE html>
 <html lang="en" class='bg-gradient-to-r from-gray-700 to-gray-800 text-white bg-blur-md touch-pan-y'>
-	<div class='p-5 md:p-16 backdrop-blur-xl' >
+	<div class='p-5 md:m-16 md:p-16 backdrop-blur-xl' >
 		<head>
 			<meta charset="UTF-8" />
 			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -27,7 +29,7 @@ const heroImage = "/fujiwara.png"
 				<section class='md:grid md:grid-cols-2 md:gap-16'>
 					<section class='justify-self-start overscroll-none'>
 						<img class='drop-shadow-2xl mb-3 md:mb-10 rounded-xl align-middle border-none' width={720} src={heroImage}>
-							<div class='prose prose-xl text-white prose-a:text-blue-400 prose-a:no-underline hover:prose-a:underline transition delay-50 duration-75 ease-in-out'>
+							<div class='font-Outfit prose prose-xl text-white prose-a:text-blue-400 prose-a:no-underline hover:prose-a:underline transition delay-50 duration-75 ease-in-out'>
 							<h1 class='text-white'>
 								Hello There.
 							</h1>
@@ -67,7 +69,7 @@ const heroImage = "/fujiwara.png"
 								posts.map((post) => (
 									<a href={`/blog/${post.slug}/`}>
 										<section class='bg-gray-800 text-right p-5 my-5 rounded-xl drop-shadow-xl hover:bg-gray-900 hover:drop-shadow-2xl transition ease-in-out delay-50'>
-											<h1 class='text-3xl md:text-6xl text-blue-400 font-semibold font-Poppins'>
+											<h1 class='text-3xl md:text-6xl text-blue-400 font-Jost'>
 													{post.data.title}
 											</h1>
 											<div class='text-xl md:text-2xl pt-5 text-gray-200 font-Archivo font-medium'>

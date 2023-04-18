@@ -3,8 +3,6 @@ import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import FormattedDate from '../components/FormattedDate.astro';
-import '@fontsource/poppins';
-import '@fontsource/archivo';
 
 type Props = CollectionEntry<'blog'>['data'];
 
@@ -24,7 +22,7 @@ const { title, description, pubDate, heroImage } = Astro.props;
 			<Header />
 			<main>
 				<article>
-					<h1 class='text-3xl md:text-6xl text-blue-400 font-Poppins font-semibold'>{title}</h1>
+					<h1 class='text-3xl md:text-6xl text-blue-400 font-Helvetica'>{title}</h1>
 					<p class='text-xl md:text-3xl py-5 font-Poppins'>{description}</p>
 					<div class='md:text-2xl text-gray-400 pb-5 font-Poppins'>
 						<FormattedDate date={pubDate} />
